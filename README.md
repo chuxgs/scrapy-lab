@@ -12,10 +12,7 @@ can be used.
 
 ### Task 6.2: Obtain a subset of the movie industry to do some research
 
-**Q62**: We added the code of the imdb spider to our scrapy-lab respository and the imdb.json with the results 
-to the correspondign Lab7 folder.
-
-As the imdb webpage follows a rather well organized html structure, the first step of the exercise which consisted
+**Q62**: As the imdb webpage follows a rather well organized html structure, the first step of the exercise which consisted
 in extracting the actors_names of a movie, their ids, and roles, was rather simple.
 
 The next step, which included visiting the authors pages to scrap some of their data such as the height was a bit more complicated.
@@ -28,6 +25,7 @@ The recursivity of the program, needed to scrape the data from many movies, made
 
 We let it run for 5 minutes approximately to check if it was working properly before passing to the next step.
 
+Most of our time was invested in making this code work properly. The generated script is named staticsearch_imdb.py which can be found in the Lab7 folder.
 
 ### Task 6.3: Study the obtained data using the Elastic Stack
 
@@ -45,10 +43,15 @@ The following image shows the generated dashboard.
 
 
 **Q64**: For this task, we decided to get the work with the heights of the actors which we alreadye extracted in exercise 2. 
-The question we want to answer is: Which is the average height of the actors of per movie role?
+The question we want to answer is: Which are the most common weights among the actors of all the scraped movies?
 
 The following image shows the resulting plot:
+<img width="774" alt="image" src="https://github.com/chuxgs/scrapy-lab/assets/128915750/fde10522-a39c-4778-ab7c-06834fc96ad5">
 
+Apparently the most common weight is 1.73cm. 
+
+It is worth mentioning that we wanted to compute average weights per movie role but we saved the heights as strings instead of floats and that 
+for that reason we decided to check the most common heights.
 
 **Q65**: We have worked on this session for 15h approximately. As explained in detail in the previous sections, 
 the main difficulties experienced were with the elasticsearch connection and the scraping of multiple movies. 
