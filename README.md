@@ -45,6 +45,8 @@ We noted that all actors appear only once in the scraped data. We could find a r
 Our code only avoids scraping the same movie twice, but it does not apply any filtering to the actors. Considering that all movies are
 scraped through the actors pages, we would expect at least some actors ids to appear more than once in the collected data.
 
+Note that the top actor names appearing in the dashboards are names of different people which just coincide.
+
 Afterwards, we tried to add some filters. In particular, we tried the following combinations:
 * We filtered movies that were produced before 1985
 * We filtered the actors height to 1.70 cm.
