@@ -41,6 +41,8 @@ the deployment was performed.
 This showed us the importance of having good documentation at hand.
 
 The following image shows the generated dashboard. 
+<img width="1467" alt="image" src="https://github.com/chuxgs/scrapy-lab/assets/128915750/63a8b301-21b0-4734-ad4a-ac2f7542f8fd">
+
 
 **Q64**: For this task, we decided to get the work with the heights of the actors which we alreadye extracted in exercise 2. 
 The question we want to answer is: Which is the average height of the actors of per movie role?
